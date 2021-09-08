@@ -34,7 +34,6 @@ namespace AtividadePizzaria
             this.labelNome = new System.Windows.Forms.Label();
             this.labelTelefone = new System.Windows.Forms.Label();
             this.buttonContinuar = new System.Windows.Forms.Button();
-            this.buttonSalvar = new System.Windows.Forms.Button();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -87,16 +86,6 @@ namespace AtividadePizzaria
             this.buttonContinuar.UseVisualStyleBackColor = true;
             this.buttonContinuar.Click += new System.EventHandler(this.buttonContinuar_Click);
             // 
-            // buttonSalvar
-            // 
-            this.buttonSalvar.Location = new System.Drawing.Point(359, 326);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvar.TabIndex = 5;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonSalvar_Click);
-            // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(413, 169);
@@ -118,7 +107,6 @@ namespace AtividadePizzaria
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.buttonSalvar);
             this.Controls.Add(this.buttonContinuar);
             this.Controls.Add(this.labelTelefone);
             this.Controls.Add(this.labelNome);

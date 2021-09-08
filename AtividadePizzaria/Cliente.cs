@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AtividadePizzaria
 {
-    class Cliente
+    public class Cliente
     {
         public int IdCliente  { get; set; }
         public string Nome { get; set; }

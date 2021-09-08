@@ -38,7 +38,7 @@ namespace AtividadePizzaria
             this.labelQBebida = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.cboSPSalgado = new System.Windows.Forms.ComboBox();
-            this.buttonSalvar = new System.Windows.Forms.Button();
+            this.buttonFinalizar = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.cboTBebidas = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
@@ -57,7 +57,7 @@ namespace AtividadePizzaria
             // 
             this.cboTPSalgado.FormattingEnabled = true;
             this.cboTPSalgado.Items.AddRange(new object[] {
-            "Broto R$ 26,00.",
+            "Broto R$ 26,00",
             "Média R$ 30,00",
             "Grande R$ 36,00"});
             this.cboTPSalgado.Location = new System.Drawing.Point(175, 175);
@@ -91,8 +91,9 @@ namespace AtividadePizzaria
             "Fanta Uva",
             "Fanta Laranja",
             "Coca-Cola",
-            "Sprite"});
-            this.cboSBebidas.Location = new System.Drawing.Point(497, 175);
+            "Sprite",
+            "Sem Bebida"});
+            this.cboSBebidas.Location = new System.Drawing.Point(495, 248);
             this.cboSBebidas.Name = "cboSBebidas";
             this.cboSBebidas.Size = new System.Drawing.Size(121, 23);
             this.cboSBebidas.TabIndex = 7;
@@ -109,7 +110,7 @@ namespace AtividadePizzaria
             // labelQBebida
             // 
             this.labelQBebida.AutoSize = true;
-            this.labelQBebida.Location = new System.Drawing.Point(530, 157);
+            this.labelQBebida.Location = new System.Drawing.Point(530, 230);
             this.labelQBebida.Name = "labelQBebida";
             this.labelQBebida.Size = new System.Drawing.Size(48, 15);
             this.labelQBebida.TabIndex = 9;
@@ -137,20 +138,20 @@ namespace AtividadePizzaria
             this.cboSPSalgado.Size = new System.Drawing.Size(121, 23);
             this.cboSPSalgado.TabIndex = 11;
             // 
-            // buttonSalvar
+            // buttonFinalizar
             // 
-            this.buttonSalvar.Location = new System.Drawing.Point(639, 399);
-            this.buttonSalvar.Name = "buttonSalvar";
-            this.buttonSalvar.Size = new System.Drawing.Size(75, 23);
-            this.buttonSalvar.TabIndex = 14;
-            this.buttonSalvar.Text = "Salvar";
-            this.buttonSalvar.UseVisualStyleBackColor = true;
-            this.buttonSalvar.Click += new System.EventHandler(this.buttonFinalizar_Click);
+            this.buttonFinalizar.Location = new System.Drawing.Point(639, 399);
+            this.buttonFinalizar.Name = "buttonFinalizar";
+            this.buttonFinalizar.Size = new System.Drawing.Size(75, 23);
+            this.buttonFinalizar.TabIndex = 14;
+            this.buttonFinalizar.Text = "Salvar";
+            this.buttonFinalizar.UseVisualStyleBackColor = true;
+            this.buttonFinalizar.Click += new System.EventHandler(this.buttonFinalizar_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(525, 230);
+            this.label3.Location = new System.Drawing.Point(522, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(56, 15);
             this.label3.TabIndex = 16;
@@ -163,8 +164,9 @@ namespace AtividadePizzaria
             "Lata (350 ml) R$ 4,00",
             "Garrafa (600 ml) R$ 6,00",
             "Garrafa (1,5 L) R$ 8,00",
-            "Garrafa (2,0L) R$ 10,00"});
-            this.cboTBebidas.Location = new System.Drawing.Point(497, 248);
+            "Garrafa (2,0L) R$ 10,00",
+            "Sem Bebida"});
+            this.cboTBebidas.Location = new System.Drawing.Point(495, 175);
             this.cboTBebidas.Name = "cboTBebidas";
             this.cboTBebidas.Size = new System.Drawing.Size(121, 23);
             this.cboTBebidas.TabIndex = 17;
@@ -176,7 +178,7 @@ namespace AtividadePizzaria
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.cboTBebidas);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.buttonSalvar);
+            this.Controls.Add(this.buttonFinalizar);
             this.Controls.Add(this.cboSPSalgado);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.labelQBebida);
@@ -204,7 +206,7 @@ namespace AtividadePizzaria
         private System.Windows.Forms.Label labelQBebida;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cboSPSalgado;
-        private System.Windows.Forms.Button buttonSalvar;
+        private System.Windows.Forms.Button buttonFinalizar;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboTBebidas;
     }
