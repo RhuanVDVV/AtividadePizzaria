@@ -30,6 +30,7 @@ namespace AtividadePizzaria
         private void InitializeComponent()
         {
             this.dataGridTabelaPedido = new System.Windows.Forms.DataGridView();
+            this.buttonRemover = new System.Windows.Forms.Button();
             this.ColunaID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColunaNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColunaTelefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -37,7 +38,6 @@ namespace AtividadePizzaria
             this.ColunaPedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColunaBebida = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColunaValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.buttonRemover = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridTabelaPedido)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,41 +58,6 @@ namespace AtividadePizzaria
             this.dataGridTabelaPedido.Size = new System.Drawing.Size(764, 371);
             this.dataGridTabelaPedido.TabIndex = 0;
             // 
-            // ColunaID
-            // 
-            this.ColunaID.HeaderText = "ID";
-            this.ColunaID.Name = "ColunaID";
-            // 
-            // ColunaNome
-            // 
-            this.ColunaNome.HeaderText = "Nome";
-            this.ColunaNome.Name = "ColunaNome";
-            // 
-            // ColunaTelefone
-            // 
-            this.ColunaTelefone.HeaderText = "Telefone";
-            this.ColunaTelefone.Name = "ColunaTelefone";
-            // 
-            // ColunaIDPedido
-            // 
-            this.ColunaIDPedido.HeaderText = "ID Pedido";
-            this.ColunaIDPedido.Name = "ColunaIDPedido";
-            // 
-            // ColunaPedido
-            // 
-            this.ColunaPedido.HeaderText = "Pedido";
-            this.ColunaPedido.Name = "ColunaPedido";
-            // 
-            // ColunaBebida
-            // 
-            this.ColunaBebida.HeaderText = "Bebida";
-            this.ColunaBebida.Name = "ColunaBebida";
-            // 
-            // ColunaValor
-            // 
-            this.ColunaValor.HeaderText = "Valor";
-            this.ColunaValor.Name = "ColunaValor";
-            // 
             // buttonRemover
             // 
             this.buttonRemover.Location = new System.Drawing.Point(330, 405);
@@ -102,6 +67,55 @@ namespace AtividadePizzaria
             this.buttonRemover.Text = "Remover Pedido";
             this.buttonRemover.UseVisualStyleBackColor = true;
             this.buttonRemover.Click += new System.EventHandler(this.buttonRemover_Click);
+            // 
+            // ColunaID
+            // 
+            this.ColunaID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaID.HeaderText = "ID";
+            this.ColunaID.Name = "ColunaID";
+            this.ColunaID.Width = 43;
+            // 
+            // ColunaNome
+            // 
+            this.ColunaNome.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaNome.HeaderText = "Nome";
+            this.ColunaNome.Name = "ColunaNome";
+            this.ColunaNome.Width = 65;
+            // 
+            // ColunaTelefone
+            // 
+            this.ColunaTelefone.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaTelefone.HeaderText = "Telefone";
+            this.ColunaTelefone.Name = "ColunaTelefone";
+            this.ColunaTelefone.Width = 76;
+            // 
+            // ColunaIDPedido
+            // 
+            this.ColunaIDPedido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaIDPedido.HeaderText = "ID Pedido";
+            this.ColunaIDPedido.Name = "ColunaIDPedido";
+            this.ColunaIDPedido.Width = 83;
+            // 
+            // ColunaPedido
+            // 
+            this.ColunaPedido.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaPedido.HeaderText = "Pedido";
+            this.ColunaPedido.Name = "ColunaPedido";
+            this.ColunaPedido.Width = 69;
+            // 
+            // ColunaBebida
+            // 
+            this.ColunaBebida.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaBebida.HeaderText = "Bebida";
+            this.ColunaBebida.Name = "ColunaBebida";
+            this.ColunaBebida.Width = 68;
+            // 
+            // ColunaValor
+            // 
+            this.ColunaValor.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ColunaValor.HeaderText = "Valor";
+            this.ColunaValor.Name = "ColunaValor";
+            this.ColunaValor.Width = 58;
             // 
             // Form3
             // 
@@ -120,6 +134,7 @@ namespace AtividadePizzaria
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridTabelaPedido;
+        private System.Windows.Forms.Button buttonRemover;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaID;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaNome;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaTelefone;
@@ -127,6 +142,5 @@ namespace AtividadePizzaria
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaPedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaBebida;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColunaValor;
-        private System.Windows.Forms.Button buttonRemover;
     }
 }

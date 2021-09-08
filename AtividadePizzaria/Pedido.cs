@@ -50,8 +50,16 @@ namespace AtividadePizzaria
                     }
                     else
                     {
-                        ValorTotal += 10.00;
+                        if (pedidob == "Sem Bebida")
+                        {
+                            ValorTotal += 0.00;
+                        }
+                        else
+                        {
+                            ValorTotal += 10.00;
+                        }
                     }
+
                 }
             }
             return ValorTotal;
